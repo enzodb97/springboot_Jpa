@@ -7,53 +7,63 @@ Estas instrucciones te permitirán obtener una copia local del proyecto para pro
 ##  Pre-requisitos 📋
 Asegúrate de tener los siguientes elementos configurados:
 
-Java Development Kit (JDK): Necesitas la versión 17 o superior para ejecutar la aplicación.
+`Java Development Kit (JDK)`: Necesitas la versión 17 o superior para ejecutar la aplicación.
 
-Maven: Herramienta de gestión de dependencias para compilar y ejecutar el proyecto.
+`Maven`: Herramienta de gestión de dependencias para compilar y ejecutar el proyecto.
 
-Base de datos MySQL: Crea una base de datos llamada Persona (sin comillas) en PhpMyAdmin o en tu servidor MySQL preferido.
+`Base de datos MySQL`: Crea una base de datos llamada `Persona` en PhpMyAdmin o en tu servidor MySQL preferido.
 
-Usuario y Contraseña de MySQL: Si estás utilizando un usuario distinto de root o tienes una contraseña personalizada, actualiza el archivo de configuración src/main/resources/application.properties con tus credenciales.
+Usuario y Contraseña de MySQL: Si estás utilizando un usuario distinto de `root` o tienes una contraseña personalizada, actualiza el archivo de configuración `src/main/resources/application.properties` con tus credenciales.
 
 properties
-Copiar código
+```javascript
 spring.datasource.url=jdbc:mysql://localhost:3306/Persona
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_contraseña
+```
 
 ## Instalación 🔧
 Clonar el repositorio:
 
-bash
-Copiar código
-git clone https://github.com/tu-usuario/nombre-del-repositorio.git
-cd nombre-del-repositorio
+```javascript
+
+git clone github.com/enzodb97/springboot_Jpa.git
+cd springboot_Jpa
+```
 Compilar el proyecto:
 
 Ejecuta el siguiente comando para descargar las dependencias y compilar el proyecto:
 
 bash
-Copiar código
+```javascript
 mvn clean install
+```
+
 Ejecutar la aplicación:
 
 Para iniciar la aplicación localmente, utiliza el siguiente comando:
 
-bash
-Copiar código
+```javascript
+
 mvn spring-boot:run
+```
+
 Verificación:
 
-La aplicación estará disponible en http://localhost:8080/. Asegúrate de que la tabla Persona se haya creado correctamente en tu base de datos MySQL.
+La aplicación estará disponible en `http://localhost:8080/`. Asegúrate de que la tabla `Persona` se haya creado correctamente en tu base de datos MySQL.
 
 ##  Uso de la Aplicación ⚙️
 Una vez la aplicación esté corriendo, puedes interactuar con la API para realizar operaciones CRUD sobre la tabla Persona. Puedes utilizar herramientas como Postman o cURL para probar los endpoints de la API.
 
 ##  Construido con 🛠️
 Spring Boot: Framework de Java para construir aplicaciones empresariales rápidas y seguras.
+
 JPA (Java Persistence API): Interfaz estándar de Java para manejar bases de datos relacionales.
+
 Hibernate: Implementación de JPA para la persistencia de datos.
+
 MySQL: Sistema de gestión de bases de datos relacional utilizado para almacenar la información.
+
 PhpMyAdmin: Herramienta de administración de bases de datos MySQL a través de una interfaz web.
 
 ## 🔗 Links
